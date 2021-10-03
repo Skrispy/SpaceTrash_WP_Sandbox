@@ -33,23 +33,23 @@ const seedDB = async () => {
         const sat = parser(newdatArr[i])
         if(sat.classification_type)
         const trash = new Trash ({
-            name:newdatArr[i].name,
-            intl_designator:newdatArr[i].intl_designator,
-            catalog_number:newdatArr[i].catalog_number,
-            classification_type:newdatArr[i].classification_type ,
-            epoch:newdatArr[i].epoch ,
-            inclination:newdatArr[i].inclination,
-            eccentricity:newdatArr[i].eccentricity,
-            right_ascension:newdatArr[i].right_ascension,
-            argument_of_periapsis:newdatArr[i].argument_of_periapsis ,
-            mean_anomaly:newdatArr[i].mean_anomaly,
-            mean_motion:newdatArr[i].mean_motion,
-            mean_motion_dot:newdatArr[i].mean_motion_dot,
-            mean_motion_dot_dot:newdatArr[i].mean_motion_dot_dot,
-            b_star:newdatArr[i].b_star,
-            revolutions_at_epoch:newdatArr[i].revolutions_at_epoch,
-            element_set_number:newdatArr[i].element_set_number,
-            ephemeris_type:newdatArr[i].ephemeris_type
+            name:sat[i].name,
+            intl_designator:sat[i].intl_designator,
+            catalog_number:sat[i].catalog_number,
+            classification_type:sat[i].classification_type ,
+            epoch:sat[i].epoch ,
+            inclination:sat[i].inclination,
+            eccentricity:sat[i].eccentricity,
+            right_ascension:sat[i].right_ascension,
+            argument_of_periapsis:sat[i].argument_of_periapsis ,
+            mean_anomaly:sat[i].mean_anomaly,
+            mean_motion:sat[i].mean_motion,
+            mean_motion_dot:sat[i].mean_motion_dot,
+            mean_motion_dot_dot:sat[i].mean_motion_dot_dot,
+            b_star:sat[i].b_star,
+            revolutions_at_epoch:sat[i].revolutions_at_epoch,
+            element_set_number:sat[i].element_set_number,
+            ephemeris_type:sat[i].ephemeris_type
         })
         await trash.save();
     }
