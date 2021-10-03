@@ -1,6 +1,6 @@
-import { newDatArray } from "../seed/cat.js";
+import { newDatArr } from "../seed/cat.mjs";
 
-console.log(newDatArray);
+console.log(newDatArr);
 
 //FUNCTION CALL
 const viewer = new Cesium.Viewer("cesiumContainer", {
@@ -15,7 +15,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
   sceneModePicker: false,
 });
 
-for (const x of newDatArray) {
+for (const x of newDatArr) {
   putJunkOnScreen(x);
 }
 
