@@ -1,4 +1,8 @@
-import {satellite} from "satellite.js";
-import {finDat} from "./parseTxt"
+var wwd = new WorldWind.WorldWindow("canvasOne");
 
-console.log(finDat)
+wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+wwd.addLayer(new WorldWind.CompassLayer());
+wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));

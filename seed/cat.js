@@ -1,3 +1,7 @@
+import {satellite} from "satellite.js";
+
+
+
 var cat = "../data/catalog.txt";
 const readLine = require("readline");
 const f = require("fs");
@@ -18,5 +22,3 @@ for(let i = 0;i<newDatArr.length;i+=2){
 
 
  // Sample TLE
-
-export {finDat}
