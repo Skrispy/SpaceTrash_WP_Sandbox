@@ -12,7 +12,7 @@ for (let i = 0; i < datArr.length; i += 3) {
   }
 }
 
-export { newDatArr };
+module.exports(newDatArr);
 // const sats = []
 // let count = 0
 // for(sat in newDatArr){

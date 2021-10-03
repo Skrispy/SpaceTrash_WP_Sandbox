@@ -1,16 +1,4 @@
-const readFileSync = require("fs");
-
-// Using ES6 imports
-
-var cat = "../data/catalog.txt";
-const datArr = readFileSync(cat).toString().split(/\n/);
-const newDatArr = [];
-//Make array of tles
-for (let i = 0; i < datArr.length; i += 3) {
-  if (datArr[i].includes("DEB") || datArr[i].includes("R/B")) {
-    newDatArr.push(datArr[i] + "\n" + datArr[i + 1] + "\n" + datArr[i + 2]);
-  }
-}
+const newDatArr = require("../seed/cat");
 //FUNCTION CALL
 const viewer = new Cesium.Viewer("cesiumContainer", {
   imageryProvider: new Cesium.TileMapServiceImageryProvider({
