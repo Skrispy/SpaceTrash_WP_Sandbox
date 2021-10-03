@@ -1,5 +1,5 @@
-import { readFileSync } from "fs";
-import { parser } from "tle-parser";
+const readFileSync = require("fs");
+
 // Using ES6 imports
 
 var cat = "../data/catalog.txt";
