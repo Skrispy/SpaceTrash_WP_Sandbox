@@ -1,3 +1,7 @@
+const {newDatArray} = require ("../seed/cat.js")
+
+console.log(newDatArray);
+
 var wwd = new WorldWind.WorldWindow("canvasOne");
 
 wwd.addLayer(new WorldWind.BMNGOneImageLayer());
